@@ -21,6 +21,6 @@ if [[ ! $(./cudnn_check.sh) ]]; then echo "CUDnn test is not passed, maybe it's 
 if [[ ! $(./darknet_install.sh) ]]; then echo "Error installing darknet!" && exit; fi
 
 ## Проверка корректности установки darknet
-if [[ ! $(./darknet_check.sh) ]]; then echo "Erorr running darknet, maybe it's built wrong, try rebuilding it!" && exit; fi
+if [[ ! $(./darknet_load.sh) ]]; then echo "Erorr running darknet, maybe it's built wrong, try rebuilding it!" && exit; fi
 
 
